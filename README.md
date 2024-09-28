@@ -36,6 +36,6 @@ For this part I made the structure of my application using HTML.
 - [x] **HTML pages** - Two HTML page that represent the ability to login and input your bowling stats.
 - [x] **Links** - The login page automatically links to the stats page. 
 - [x] **Text** - You can see an example of the leaderboard with the bowling scores.
-- [ ] **Images** - I added an image of a bowling cartoon.
+- [x] **Images** - I added an image of a bowling cartoon.
 - [x] **DB/Login** - Input box and submit button for login. The bowling scores represent data pulled from the database.
 - [x] **WebSocket** - The leaderboard of scores represents the stats of realtime friends.

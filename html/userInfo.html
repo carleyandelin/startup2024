@@ -28,18 +28,22 @@
     </header>
 
     <main>
-      <h1>Welcome to BowlerBlitz</h1>
-      <form method="get" action="play.html">
+      <h1>Welcome back to BowlerBlitz!</h1>
+      <h3>Input your latest bowling stats below</h3>
+      <form method="get" action="userInfo.html">
         <div>
-          <span>Email:</span>
-          <input type="text" placeholder="your@email.com" />
+          <span>Score:</span>
+          <input type="int" placeholder="###" />
         </div>
         <div>
-          <span>Password:</span>
-          <input type="password" placeholder="password" />
+          <span>Number of Strikes:</span>
+          <input type="int" placeholder="##" />
         </div>
-        <button type="submit">Login</button>
-        <button type="submit">Create</button>
+        <div>
+            <span>Number of Spares:</span>
+            <input type="int" placeholder="##" />
+          </div>
+        <button type="submit">Submit</button>
       </form>
     </main>
 

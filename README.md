@@ -29,7 +29,7 @@ Introducing _BowlerBlitz_—your new go-to for sharing bowling scores and connec
 - **WebSocket**
   - See reactions to your scores and if you move places on the scoreboard.
 
-  ### HTML deliverable
+## HTML deliverable
 
 For this part I made the structure of my application using HTML.
 

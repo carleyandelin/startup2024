@@ -6,56 +6,75 @@
     <title>Leaderboard</title>
     <link rel="icon" href="favicon.ico" />
   </head>
+ 
   <body>
-    <header>
-      <h1>Bowler Blitz<sup></sup></h1>
-
-      <nav>
-        <menu>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="leaderboard.html">Leaderboard</a></li>
-          <li><a href="userInfo.html">Account Stats</a></li>
-          <li><a href="about.html">About</a></li>
-        </menu>
-      </nav>
-
-      <hr />
-    </header>
-
-    <main>
-      <table>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Score</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Abigail Beus</td>
-            <td>118</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Carley Andelin</td>
-            <td>115</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Daisy Bailey</td>
-            <td>107</td>
-          </tr>
-        </tbody>
-      </table>
-    </main>
-
-    <footer>
-      <hr />
-      <span class="text-reset">Carley Andelin</span>
-      <br />
-      <a href="https://github.com/carleyandelin/startup2024">GitHub</a>
-    </footer>
-  </body>
-</html>
+   
+    <div class="container">
+      <div class="left-third">
+      <img src="bowling.jpg" alt="bowling cartoon" width="200" height="135" />
+      <h1>Welcome back, {user}!</h1>
+        <p>Your best score: {highest score}</p>
+        <p>Number of Strikes: {###}</p>
+        <p>Number of Spares: {###}</p>
+        <a href="userInfo.html" class=button>Input New Stats!</a>
+        
+        </div>
+      <div class="right-two-thirds">
+    
+     
+      <header>
+        <nav>
+          <menu>
+            <a href="index.html">Home</a>
+            <a href="leaderboard.html">Leaderboard</a>
+            
+            <a href="about.html">About</a>
+          </menu>
+        </nav>
+        
+        <h1>Bowler Blitz<sup></sup></h1>
+  
+        <hr />
+      </header>
+     
+  
+  
+      <main>
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Abigail Beus</td>
+              <td>118</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Carley Andelin</td>
+              <td>115</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Daisy Bailey</td>
+              <td>107</td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+  
+      <footer>
+        <hr />
+        <span class="text-reset">Carley Andelin</span>
+        <br />
+        <a href="https://github.com/carleyandelin/startup2024">GitHub</a>
+      </footer>
+        </div>
+      </div>
+    </body>
+  

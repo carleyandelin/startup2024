@@ -39,3 +39,14 @@ For this part I made the structure of my application using HTML.
 - [x] **Images** - I added an image of a bowling cartoon.
 - [x] **DB/Login** - Input box and submit button for login. The bowling scores represent data pulled from the database.
 - [x] **WebSocket** - The leaderboard of scores represents the stats of realtime friends.
+
+## CSS deliverable
+
+For this part I used CSS to style my website to look how I envisioned it to. 
+
+- [x] **Header, footer, and main content body**
+- [x] **Navigation elements** - I have mulitple menus and even have a dropdown one
+- [x] **Responsive to window resizing** - My website moves all window sizes and devices
+- [x] **Application elements** - Used good contrast and whitespace
+- [x] **Application text content** - Consistent fonts
+- [x] **Application images** - Used images as backgrounds and decoration

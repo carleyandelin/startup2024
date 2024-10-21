@@ -47,12 +47,12 @@
 ### How would you use JavaScript to select an element with the id of "byu" and change the text color of that element to green?
 - `document.getElementById('byu').style.color = 'green';`
 ### What is the opening HTML tag for a paragraph, ordered list, unordered list, second-level heading, first-level heading, third-level heading?
-- Paragraph: <p>
-- Ordered List: <ol>
-- Unordered List: <ul>
-- Second-level heading: <h2>
-- First-level heading: <h1>
-- Third-level heading: <h3>
+- Paragraph: `<p>`
+- Ordered List: `<ol>`
+- Unordered List: `<ul>`
+- Second-level heading: `<h2>`
+- First-level heading: `<h1>`
+- Third-level heading: `<h3>`
 ### How do you declare the document type to be HTML?
 - `<!DOCTYPE html>`
 ### What is valid JavaScript syntax for if, else, for, while, switch statements?

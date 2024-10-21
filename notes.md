@@ -7,10 +7,10 @@
 
 ## Midterm Notes
 
-What does `<link>` do in HTML?
-    - The `<link>` element is used to define the relationship between a document and an external resource. Most commonly, it is used to link stylesheets to the HTML file, using the rel="stylesheet" attribute.
-What does the `<div>` tag do?
-    - The `<div>` tag is a block-level container that is used to group HTML elements. It has no semantic meaning but is often used to style or manipulate a section of the page with CSS or JavaScript.
+# What does `<link>` do in HTML?
+- The `<link>` element is used to define the relationship between a document and an external resource. Most commonly, it is used to link stylesheets to the HTML file, using the rel="stylesheet" attribute.
+# What does the `<div>` tag do?
+- The `<div>` tag is a block-level container that is used to group HTML elements. It has no semantic meaning but is often used to style or manipulate a section of the page with CSS or JavaScript.
 What is the difference between the `#title` and `.grid` selectors in CSS?
     - `#title` selects an element with the id attribute of "title" (ID selectors are unique).
     - `.grid` selects all elements with the class attribute of "grid" (class selectors can be applied to multiple elements).

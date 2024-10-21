@@ -7,7 +7,7 @@
 
 # Midterm Notes
 
-### What does `<link>` do in HTML?
+#### What does `<link>` do in HTML?
 - The `<link>` element is used to define the relationship between a document and an external resource. Most commonly, it is used to link stylesheets to the HTML file, using the rel="stylesheet" attribute.
 ### What does the `<div>` tag do?
 - The `<div>` tag is a block-level container that is used to group HTML elements. It has no semantic meaning but is often used to style or manipulate a section of the page with CSS or JavaScript.

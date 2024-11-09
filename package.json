@@ -1,5 +1,26 @@
 {
   "devDependencies": {
     "vite": "^5.4.10"
-  }
+  },
+  "name": "startup2024",
+  "version": "1.0.0",
+  "description": "### Elevator Pitch  Introducing _BowlerBlitz_—your new go-to for sharing bowling scores and connecting with friends! Track your strikes, compare scores, and celebrate every spare with this website. Elevate your game and keep the fun rolling with BowlerBlitz—where every pin is a win! ### Design v1 <img src=\"designv1.jpeg\" alt=\"Screenshot of the first draft of my web design\" width=\"500\" height=\"300\" />",
+  "main": "index.js",
+  "dependencies": {
+    "esbuild": "^0.21.5",
+    "nanoid": "^3.3.7",
+    "picocolors": "^1.1.1",
+    "postcss": "^8.4.47",
+    "rollup": "^4.25.0",
+    "source-map-js": "^1.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

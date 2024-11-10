@@ -1,10 +1,16 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
+import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
+import { Login } from './login/login';
+import { userInfo } from './userInfo/userInfo';
+import { Leaderboard } from './leaderboard/leaderboard';
+import { About } from './about/about';
 
 export default function App() {
     return (
-      <div className='body bg-dark text-light'>
+      <BrowserRouter>
+        <div className='body bg-dark text-light'>
         <header className='container-fluid'>
           <nav className='navbar fixed-top navbar-dark'>
             <div className='navbar-brand'>
@@ -12,24 +18,24 @@ export default function App() {
             </div>
             <menu className='navbar-nav'>
               <li className='nav-item'>
-                <a className='nav-link' href='../index.html'>
+                <NavLink className='nav-link' to='index.html'>
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='leaderboard/leaderboard.html'>
+                <NavLink className='nav-link' to='leaderboard.html'>
                   Leaderboard
-                </a>
+                </NavLink>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='userInfo/userInfo.html'>
+                <NavLink className='nav-link' to='userInfo.html'>
                   Account Stats
-                </a>
+                </NavLink>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='about/about.html'>
+                <NavLink className='nav-link' to='about.html'>
                   About
-                </a>
+                </NavLink>
               </li>
             </menu>
           </nav>
@@ -46,5 +52,7 @@ export default function App() {
           </div>
         </footer>
       </div>
+      </BrowserRouter>
     );
   }
+

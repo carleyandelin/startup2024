@@ -52,8 +52,8 @@ export default function App() {
         <footer className='bg-dark text-white-50'>
           <div className='container-fluid'>
             <span className='text-reset'>Carley Andelin</span>
-            <a className='text-reset' href='https://github.com/webprogramming260/simon-react'>
-              Source
+            <a className='text-reset' href='https://github.com/carleyandelin/startup2024'>
+              Github
             </a>
           </div>
         </footer>
@@ -65,4 +65,3 @@ export default function App() {
   function NotFound() {
     return <main className='container-fluid bg-secondary text-center'>404: Return to sender. Address unknown.</main>;
   }
-  

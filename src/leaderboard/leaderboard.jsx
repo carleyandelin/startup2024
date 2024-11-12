@@ -1,9 +1,44 @@
 import React from 'react';
+import './leaderboard.css';
 
 export function Login() {
   return (
     <main className='container-fluid bg-secondary text-center'>
-      <div>leaderboard displayed here</div>
+      <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>
+                <div class="dropdown">
+          <button class="dropdown-btn">Select</button>
+          <div class="dropdown-content">
+            <a href="scores.html">Scores</a>
+            <a href="strikes.html">Strikes</a>
+            <a href="spares.html">Spares</a>
+          </div>
+        </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Please Select Ranking Categoty</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
     </main>
   );
 }

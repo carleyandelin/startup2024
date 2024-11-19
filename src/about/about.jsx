@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.css';
 
-export function Login() {
+export function About() {
   return (
     <main className='container-fluid bg-secondary text-center'>
       <p>

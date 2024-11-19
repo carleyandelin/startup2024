@@ -1,7 +1,7 @@
 import React from 'react';
 import './leaderboard.css';
 
-export function leaderboard() {
+export function Leaderboard() {
   return (
     <main className='container-fluid bg-secondary text-center'>
       <table>

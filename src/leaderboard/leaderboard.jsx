@@ -10,9 +10,9 @@ export function Leaderboard() {
               <th>Rank</th>
               <th>Name</th>
               <th>
-                <div class="dropdown">
-          <button class="dropdown-btn">Select</button>
-          <div class="dropdown-content">
+                <div className="dropdown">
+          <button className="dropdown-btn">Select</button>
+          <div className="dropdown-content">
             <a href="scores.html">Scores</a>
             <a href="strikes.html">Strikes</a>
             <a href="spares.html">Spares</a>

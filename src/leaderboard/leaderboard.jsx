@@ -14,9 +14,9 @@ export function Leaderboard() {
                 <div className="dropdown">
           <button className="dropdown-btn">Select</button>
           <div className="dropdown-content">
-            <NavLink className='nav-link' to='./ranking/scores'>Scores</NavLink>
-            <NavLink className='nav-link' to='./ranking/strikes'>Strikes</NavLink>
-            <NavLink className='nav-link' to='./ranking/spares'>Spares</NavLink>
+            <a className="nav-link" href='./ranking/scores'>Scores</a>
+            <a className="nav-link" href='./ranking/strikes'>Strikes</a>
+            <a className="nav-link" href='./ranking/spares'>Spares</a>
           </div>
         </div>
               </th>

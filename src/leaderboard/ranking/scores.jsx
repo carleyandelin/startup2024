@@ -1,11 +1,10 @@
 import React from 'react';
-import './leaderboard.css';
+import './scores.css';
 
-export function Leaderboard() {
+export function Scores() {
   return (
-    <main className='container-fluid bg-secondary text-center'>
-      <h1>BowlerBlitz Leaderboard</h1>
-      <table>
+    <main>
+        <table>
           <thead>
             <tr>
               <th>Rank</th>
@@ -25,21 +24,21 @@ export function Leaderboard() {
           <tbody>
             <tr>
               <td>1</td>
-              <td></td>
-              <td></td>
+              <td>Abigail Beus</td>
+              <td>118</td>
             </tr>
             <tr>
               <td>2</td>
-              <td>Please Select Ranking Categoty</td>
-              <td></td>
+              <td>Carley Andelin</td>
+              <td>115</td>
             </tr>
             <tr>
               <td>3</td>
-              <td></td>
-              <td></td>
+              <td>Daisy Bailey</td>
+              <td>107</td>
             </tr>
           </tbody>
         </table>
-    </main>
+      </main>
   );
 }

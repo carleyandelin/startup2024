@@ -18,7 +18,7 @@ export default function App() {
             </div>
             <menu className='navbar-nav'>
               <li className='nav-item'>
-                <NavLink className='nav-link' to='index'>
+                <NavLink className='nav-link' to='login'>
                   Home
                 </NavLink>
               </li>

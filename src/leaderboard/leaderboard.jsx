@@ -2,8 +2,20 @@ import React from 'react';
 import './leaderboard.css';
 
 export function Leaderboard() {
+  const mainStyle = {
+    flex: '1 calc(100vh - 110px)',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    backgroundImage: "url('/bowlingBackground.jpg')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  };
+
   return (
-    <main className='container-fluid bg-secondary text-center'>
+    <main style={mainStyle}>
       <h1>BowlerBlitz Leaderboard</h1>
       <table>
           <thead>

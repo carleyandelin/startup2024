@@ -2,7 +2,7 @@ import React from 'react';
 
 export function Login() {
   return (
-    <main className='container-fluid bg-secondary text-center'>
+    <main>
       <h1>Welcome to BowlerBlitz!</h1>
       <form method="get" action="userInfo.html">
         <div>

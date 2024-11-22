@@ -22,7 +22,7 @@
     h1 {
       color: white;
     }
-    background-image: url('bowlingBackground.jpg');
+    background-image: url('/bowlingBackground.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -50,3 +50,10 @@ For this part I used CSS to style my website to look how I envisioned it to.
 - [x] **Application elements** - Used good contrast and whitespace
 - [x] **Application text content** - Consistent fonts
 - [x] **Application images** - Used images as backgrounds and decoration
+
+## React deliverable
+
+For this part I used JavaScript and React so that the application completely works for a single user. I think I also added placeholders for future technology.
+
+- [x] **Bundled and transpiled** - done!
+- [x] **Routing** - All paths are working (finally! Except the ranking on the leaderboard page, which I'm going to change soon)

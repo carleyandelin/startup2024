@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Login } from './login/login';
-import { userInfo } from './userInfo/userInfo';
+import { UserInfo } from './userInfo/userInfo';
 import { Leaderboard } from './leaderboard/leaderboard';
 import { About } from './about/about';
 
@@ -18,7 +18,7 @@ export default function App() {
             </div>
             <menu className='navbar-nav'>
               <li className='nav-item'>
-                <NavLink className='nav-link' to='login'>
+                <NavLink className='nav-link' to=''>
                   Home
                 </NavLink>
               </li>
@@ -43,7 +43,7 @@ export default function App() {
   
         <Routes>
             <Route path='/' element={<Login />} exact />
-            <Route path='/userInfo' element={<userInfo />} />
+            <Route path='/userInfo' element={<UserInfo />} />
             <Route path='/leaderboard' element={<Leaderboard />} />
             <Route path='/about' element={<About />} />
             <Route path='*' element={<NotFound />} />

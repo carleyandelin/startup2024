@@ -1,7 +1,7 @@
 import React from 'react';
 import './userInfo.css';
 
-export function userInfo() {
+export function UserInfo() {
   return (
     <main className='container-fluid bg-secondary text-center'>
       <h1>Welcome back to BowlerBlitz!</h1>

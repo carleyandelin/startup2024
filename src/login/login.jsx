@@ -1,5 +1,9 @@
 import React from 'react';
 
+import { Unauthenticated } from './unauthenticated';
+import { Authenticated } from './authenticated';
+import { AuthState } from './authState';
+
 export function Login() {
   const mainStyle = {
     flex: '1 calc(100vh - 110px)',
@@ -16,18 +20,20 @@ export function Login() {
   return (
     <main style={mainStyle}>
       <h1>Welcome to BowlerBlitz!</h1>
-      <form method="get" action="userInfo.html">
-        <div>
-          <span>Email:</span>
-          <input type="text" placeholder="your@email.com" />
-        </div>
-        <div>
-          <span>Password:</span>
-          <input type="password" placeholder="password" />
-        </div>
-        <button type="submit">Login</button>
-        <button type="submit">Create</button>
-      </form>
+      <div>
+        {authState !== AuthState.Unknown && <h1>Welcome to Simon</h1>}
+        {authState === AuthState.Authenticated && (
+          <Authenticated userName={userName} onLogout={() => onAuthChange(userName, AuthState.Unauthenticated)} />
+        )}
+        {authState === AuthState.Unauthenticated && (
+          <Unauthenticated
+            userName={userName}
+            onLogin={(loginUserName) => {
+              onAuthChange(loginUserName, AuthState.Authenticated);
+            }}
+          />
+        )}
+      </div>
     </main>
   );
 }

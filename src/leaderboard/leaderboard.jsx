@@ -13,10 +13,52 @@ export function Leaderboard() {
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
   };
+// start of psuedocode and things that I need to implement
+function TableData(choice) {
+  if (choice === "Scores") {
+    return [
+        <table>
+          for i in scores_list.size {
+            <tr>
+            <td>[i]</td>
+            <td>[user.name]</td>
+            <td>[user.score]</td>
+          </tr>}
+        </table>
+    ]
+  }
+  else if (choice === "Strikes") {
+    return [
+      <table>
+          for i in strikes_list.size {
+            <tr>
+            <td>[i]</td>
+            <td>[user.name]</td>
+            <td>[user.strikes]</td>
+          </tr>}
+        </table>
+    ]
+  }
+  else if (choice === "Spares") {
+    return [
+      <table>
+          for i in spares_list.size {
+            <tr>
+            <td>[i]</td>
+            <td>[user.name]</td>
+            <td>[user.spares]</td>
+          </tr>}
+        </table>
+    ]
+  }
+}
+// also line 80
+// end of said psuedocode and implementation requirements
 
   return (
     <main style={mainStyle}>
       <h1>BowlerBlitz Leaderboard</h1>
+      <h6>please select ranking category</h6>
       <table>
           <thead>
             <tr>
@@ -35,21 +77,7 @@ export function Leaderboard() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Please Select Ranking Categoty</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td></td>
-              <td></td>
-            </tr>
+            TableData(choice)   
           </tbody>
         </table>
     </main>

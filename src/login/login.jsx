@@ -4,7 +4,7 @@ import { Unauthenticated } from './unauthenticated';
 import { Authenticated } from './authenticated';
 import { AuthState } from './authState';
 
-export function Login() {
+export function Login({ userName, authState, onAuthChange }) {
   const mainStyle = {
     flex: '1 calc(100vh - 110px)',
     display: 'flex',
@@ -18,10 +18,10 @@ export function Login() {
   };
 
   return (
-    <main style={mainStyle}>
+    <main className={mainStyle}>
       <h1>Welcome to BowlerBlitz!</h1>
       <div>
-        {authState !== AuthState.Unknown && <h1>Welcome to Simon</h1>}
+        {authState !== AuthState.Unknown && <h3>Life’s a game, bowling’s serious.</h3>}
         {authState === AuthState.Authenticated && (
           <Authenticated userName={userName} onLogout={() => onAuthChange(userName, AuthState.Unauthenticated)} />
         )}

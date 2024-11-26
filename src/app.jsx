@@ -6,8 +6,13 @@ import { Login } from './login/login';
 import { UserInfo } from './userInfo/userInfo';
 import { Leaderboard } from './leaderboard/leaderboard';
 import { About } from './about/about';
+import { AuthState } from './login/authState';
 
 export default function App() {
+  const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
+  const currentAuthState = userName ? AuthState.Authenticated : AuthState.Unauthenticated;
+  const [authState, setAuthState] = React.useState(currentAuthState);
+  
     return (
       <BrowserRouter>
         <div className='body bg-dark text-light'>
@@ -78,3 +83,4 @@ export default function App() {
   function NotFound() {
     return <main className='container-fluid bg-secondary text-center'>404: Return to sender. Address unknown.</main>;
   }
+

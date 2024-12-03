@@ -99,12 +99,13 @@ return (
         </thead>
         <tbody>
         <table>
-           for i in scores_list.size {
-             <tr>
-             <td>[i]</td>
-             <td>[user.name]</td>
-             <td>[user.score]</td>
-           </tr>}
+        {scoresList.map((user, i) => (    // need to make scoresList. Hopefully a priority queue
+          <tr key={i}>
+            <td>{i}</td>
+            <td>{user.name}</td>
+            <td>{user.score}</td>
+          </tr>
+        ))}
         </table>
         </tbody>
       </table>

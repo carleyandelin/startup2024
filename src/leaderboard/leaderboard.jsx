@@ -89,7 +89,6 @@ export function Leaderboard() {
 return (
   <main style={mainStyle}>
     <h1>BowlerBlitz Leaderboard</h1>
-    <h6><em>please select ranking category</em></h6>
     <table>
         <thead>
           <tr>

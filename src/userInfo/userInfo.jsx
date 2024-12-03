@@ -14,6 +14,30 @@ export function UserInfo() {
     backgroundRepeat: 'no-repeat',
   };
 
+  // code for scores, strikes, and spares: 
+
+  // return (
+  //   <main style={mainStyle}>
+  //     <h1>Welcome back to BowlerBlitz!</h1>
+  //     <h3>Input your latest bowling stats below</h3>
+  //     <form method="get" action="userInfo.html">
+  //       <div>
+  //         <span>Score:</span>
+  //         <input type="int" placeholder="###" />
+  //       </div>
+  //       <div>
+  //         <span>Number of Strikes:</span>
+  //         <input type="int" placeholder="##" />
+  //       </div>
+  //       <div>
+  //           <span>Number of Spares:</span>
+  //           <input type="int" placeholder="##" />
+  //         </div>
+  //       <button type="submit">Submit</button>
+  //     </form>
+  //   </main>
+  // );
+
   return (
     <main style={mainStyle}>
       <h1>Welcome back to BowlerBlitz!</h1>
@@ -23,14 +47,6 @@ export function UserInfo() {
           <span>Score:</span>
           <input type="int" placeholder="###" />
         </div>
-        <div>
-          <span>Number of Strikes:</span>
-          <input type="int" placeholder="##" />
-        </div>
-        <div>
-            <span>Number of Spares:</span>
-            <input type="int" placeholder="##" />
-          </div>
         <button type="submit">Submit</button>
       </form>
     </main>

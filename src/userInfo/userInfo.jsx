@@ -1,5 +1,7 @@
 import React from 'react';
 import './userInfo.css';
+import { Leaderboard } from '../leaderboard/leaderboard';
+import { Link } from 'react-router-dom';
 
 export function UserInfo() {
   const mainStyle = {
@@ -38,6 +40,11 @@ export function UserInfo() {
   //   </main>
   // );
 
+function captureScore() {
+  // do submit functionality
+}
+
+
   return (
     <main style={mainStyle}>
       <h1>Welcome back to BowlerBlitz!</h1>
@@ -47,7 +54,9 @@ export function UserInfo() {
           <span>Score:</span>
           <input type="int" placeholder="###" />
         </div>
-        <button type="submit">Submit</button>
+        <Link to='/leaderboard'>
+        <button onClick={() => captureScore()}>Submit and see Leaderboard</button>
+        </Link>
       </form>
     </main>
   );

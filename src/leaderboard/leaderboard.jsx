@@ -98,21 +98,18 @@ return (
           </tr>
         </thead>
         <tbody>
-        <tr>
-          <td></td>
-          <td>table placeholder</td>
-          <td></td>
-        </tr>
+        {rankingScores}
         </tbody>
       </table>
   </main>
 );
 }
 
-// {scoresList.map((user, i) => (    // need to make scoresList. Hopefully a priority queue
-//   <tr key={i}>
-//     <td>{i + 1}</td>
-//     <td>{user.name}</td>
-//     <td>{user.score}</td>
-//   </tr>
-// ))}
+function rankingScores(scoresList) {
+  {scoresList.map((user, i) => (    // need to make scoresList. Hopefully a priority queue
+    <tr key={i}>
+      <td>{i + 1}</td>
+      <td>{user.name}</td>
+      <td>{user.score}</td>
+    </tr>
+  ))}}

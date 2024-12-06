@@ -1,6 +1,5 @@
 const express = require('express');
 const uuid = require('uuid');
-const bcrypt = require('bcrypt');
 const app = express();
 
 // The users object stores user data and their scores
@@ -25,10 +24,8 @@ apiRouter.post('/auth/create', async (req, res) => {
   if (user) {
     res.status(409).send({ msg: 'Existing user' });
   } else {
-    const hashedPassword = await bcrypt.hash(req.body.password, 10);
     const newUser = {
       email: req.body.email,
-      password: hashedPassword,
       token: uuid.v4(),
       scores: [] // Initialize an empty scores array
     };
@@ -41,7 +38,7 @@ apiRouter.post('/auth/create', async (req, res) => {
 // GetAuth login an existing user
 apiRouter.post('/auth/login', async (req, res) => {
   const user = users[req.body.email];
-  if (user && (await bcrypt.compare(req.body.password, user.password))) {
+  if (user) {
     user.token = uuid.v4(); // Refresh the token
     res.send({ token: user.token });
   } else {
@@ -97,9 +94,9 @@ apiRouter.get('/scores', (_req, res) => {
     }))
   );
 
-  // Sort scores across all users and limit to top 10
+  // Sort scores across all users and limit to top 100
   allScores.sort((a, b) => b.score - a.score);
-  res.send(allScores.slice(0, 10));
+  res.send(allScores.slice(0, 100));
 });
 
 // Return the application's default page if the path is unknown

@@ -106,7 +106,7 @@ return (
 }
 
 function rankingScores(scoresList) {
-  {scoresList.map((user, i) => (    // need to make scoresList. Hopefully a priority queue
+  {allScores.map((user, i) => (    // allScores is in my service/index. How do I let leaderboard access it?
     <tr key={i}>
       <td>{i + 1}</td>
       <td>{user.name}</td>

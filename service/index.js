@@ -129,3 +129,4 @@ function updateScores(newScore, scores) {
 
   return scores;
 }
+

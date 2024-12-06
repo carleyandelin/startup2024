@@ -98,13 +98,11 @@ return (
           </tr>
         </thead>
         <tbody>
-        <table>
         <tr>
           <td></td>
           <td>table placeholder</td>
           <td></td>
         </tr>
-        </table>
         </tbody>
       </table>
   </main>
@@ -113,7 +111,7 @@ return (
 
 // {scoresList.map((user, i) => (    // need to make scoresList. Hopefully a priority queue
 //   <tr key={i}>
-//     <td>{i}</td>
+//     <td>{i + 1}</td>
 //     <td>{user.name}</td>
 //     <td>{user.score}</td>
 //   </tr>

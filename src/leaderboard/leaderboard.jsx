@@ -32,7 +32,7 @@ export function Leaderboard() {
     for (const [i, score] of scores.entries()) {
       scoreRows.push(
         <tr key={i}>
-          <td>{i}</td>
+          <td>{i+1}</td>
           <td>{score.name.split('@')[0]}</td>
           <td>{score.score}</td>
         </tr>

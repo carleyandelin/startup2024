@@ -14,6 +14,18 @@ export function Leaderboard() {
     backgroundRepeat: 'no-repeat',
   };
 
+  function Scores() {
+    const [scores, setScores] = React.useState([]);
+  
+    // Demonstrates calling a service asynchronously so that
+    // React can properly update state objects with the results.
+    React.useEffect(() => {
+      fetch('/api/scores')
+        .then((response) => response.json())
+        .then((scores) => {
+          setScores(scores);
+        });
+    }, []);}
 
 return (
   <main style={mainStyle}>

@@ -28,8 +28,8 @@ export function Leaderboard() {
     }, []);}
 
   const scoreRows = [];
-  if (scores.length) {
-    for (const [i, score] of scores.entries()) {
+  if (Scores.length) {
+    for (const [i, score] of score.entries()) {
       scoreRows.push(
         <tr key={i}>
           <td>{i+1}</td>

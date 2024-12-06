@@ -14,7 +14,39 @@ export function Leaderboard() {
     backgroundRepeat: 'no-repeat',
   };
 
-  // below is (hopeful) code for options of ranking. decided to do the minimun for class since I'm behind
+
+return (
+  <main style={mainStyle}>
+    <h1>BowlerBlitz Leaderboard</h1>
+    <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+        {rankingScores}
+        </tbody>
+      </table>
+  </main>
+);
+}
+
+function rankingScores(scoresList) {
+  {allScores.map((user, i) => (    // allScores is in my service/index. How do I let leaderboard access it?
+    <tr key={i}>
+      <td>{i + 1}</td>
+      <td>{user.name}</td>
+      <td>{user.score}</td>
+    </tr>
+  ))}}
+
+
+
+
+    // below is (hopeful) code for options of ranking. decided to do the minimun for class since I'm behind
 
 // // start of psuedocode and things that I need to implement
 // function TableData(choice) {
@@ -85,31 +117,3 @@ export function Leaderboard() {
 //         </table>
 //     </main>
 //   );
-
-return (
-  <main style={mainStyle}>
-    <h1>BowlerBlitz Leaderboard</h1>
-    <table>
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>Name</th>
-            <th>Score</th>
-          </tr>
-        </thead>
-        <tbody>
-        {rankingScores}
-        </tbody>
-      </table>
-  </main>
-);
-}
-
-function rankingScores(scoresList) {
-  {allScores.map((user, i) => (    // allScores is in my service/index. How do I let leaderboard access it?
-    <tr key={i}>
-      <td>{i + 1}</td>
-      <td>{user.name}</td>
-      <td>{user.score}</td>
-    </tr>
-  ))}}

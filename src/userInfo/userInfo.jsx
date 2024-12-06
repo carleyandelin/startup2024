@@ -40,7 +40,7 @@ export function UserInfo() {
   //   </main>
   // );
 
-function captureScore() {
+function captureScore() {        // THIS IS WHAT I'M CONFUSED ON!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   const [scores, setScores] = React.useState([]);
   
     // Demonstrates calling a service asynchronously so that

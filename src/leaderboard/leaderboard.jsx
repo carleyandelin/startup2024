@@ -14,7 +14,6 @@ export function Leaderboard() {
     backgroundRepeat: 'no-repeat',
   };
 
-  function Scores() {
     const [scores, setScores] = React.useState([]);
   
     // Demonstrates calling a service asynchronously so that
@@ -25,11 +24,11 @@ export function Leaderboard() {
         .then((scores) => {
           setScores(scores);
         });
-    }, []);}
+    }, []);
 
   const scoreRows = [];
-  if (Scores.length) {
-    for (const [i, score] of score.entries()) {
+  if (scores.length) {
+    for (const [i, score] of scores.entries()) {
       scoreRows.push(
         <tr key={i}>
           <td>{i+1}</td>
@@ -60,8 +59,8 @@ return (
         <tbody id='scores'>{scoreRows}</tbody>
       </table>
   </main>
-);
-}
+);}
+
 
 // function rankingScores(scoresList) {
 //   {allScores.map((user, i) => (    // allScores is in my service/index. How do I let leaderboard access it?

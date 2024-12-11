@@ -61,7 +61,7 @@ export default function App() {
             }
             exact
           />
-            <Route path='/userInfo' element={<UserInfo />} />
+            <Route path='/userInfo' element={<UserInfo userName={userName}/>} />
             <Route path='/leaderboard' element={<Leaderboard />} />
             <Route path='/about' element={<About />} />
             <Route path='*' element={<NotFound />} />

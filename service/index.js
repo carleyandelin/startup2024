@@ -4,6 +4,7 @@ const app = express();
 
 // The users object stores user data and their scores
 let users = {};
+let scores = [];
 
 // The service port. In production, the front-end code is statically hosted by the service on the same port.
 const port = process.argv.length > 2 ? process.argv[2] : 4000;
@@ -57,37 +58,37 @@ apiRouter.delete('/auth/logout', (req, res) => {
 
 // SubmitScore for the logged-in user
 apiRouter.post('/score', (req, res) => {
-  const user = Object.values(users).find((u) => u.token === req.body.token);
+  // const user = Object.values(users).find((u) => u.token === req.body.token);
 
-  if (!user) {
-    return res.status(401).send({ msg: 'Unauthorized' });
-  }
+//   if (!user) {
+//     return res.status(401).send({ msg: 'Unauthorized' });
+//   }
 
   if (!req.body.score) {
     return res.status(400).send({ msg: 'Score is required' });
   }
 
   // Update user's scores
-  user.scores = updateScores({ score: req.body.score, timestamp: new Date() }, user.scores);
+  scores = updateScores( req.body , scores);
 
-  res.send(user.scores);
+  res.send(scores);
 });
 
 // Get the scores for the logged-in user
 apiRouter.get('/user/scores', (req, res) => {
-  const user = Object.values(users).find((u) => u.token === req.query.token);
+  // const user = Object.values(users).find((u) => u.token === req.query.token);
 
-  if (!user) {
-    return res.status(401).send({ msg: 'Unauthorized' });
-  }
+//   if (!users) {
+//     return res.status(401).send({ msg: 'Unauthorized' });
+//   }
 
-  res.send(user.scores);
+  res.send(scores);
 });
 
 // GetScores globally
 apiRouter.get('/scores', (_req, res) => {
   const allScores = Object.values(users).flatMap((user) =>
-    user.scores.map((score) => ({
+    scores.map((score) => ({
       email: user.email,
       score: score.score,
       timestamp: score.timestamp

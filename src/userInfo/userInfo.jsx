@@ -19,17 +19,15 @@ export function UserInfo(props) {
   const userName = props.userName;
   const [score, setScore] = React.useState("");
 
-async function captureScore() {        // THIS IS WHAT I'M CONFUSED ON!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  async function saveScore(score) {
+    const newScore = { name: userName, score: score };
 
-  const newScore = { name: userName, score: score };
-  
-    // Demonstrates calling a service asynchronously so that
-    // React can properly update state objects with the results.
     await fetch('/api/score', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(newScore),
-    });}
+    });
+  }
 
 
   return (
@@ -42,7 +40,7 @@ async function captureScore() {        // THIS IS WHAT I'M CONFUSED ON!!!!!!!!!!
           <input className='form-control' value={score} onChange = {(e) => setScore(e.target.value)} type="int" placeholder="###" />
         </div>
         <Link to='/leaderboard'>
-        <button onClick={() => captureScore()}>Submit and see Leaderboard</button>
+        <button onClick={() => saveScore()}>Submit and see Leaderboard</button>
         </Link>
       </form>
     </main>

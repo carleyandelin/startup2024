@@ -2,6 +2,9 @@ import React from 'react';
 import './about.css';
 
 export function About() {
+  const [quote, setQuote] = React.useState('Loading...');
+  const [quoteAuthor, setQuoteAuthor] = React.useState('unknown');
+
   const mainStyle = {
     flex: '1 calc(100vh - 110px)',
     display: 'flex',
@@ -14,6 +17,17 @@ export function About() {
     backgroundRepeat: 'no-repeat',
   };
 
+  React.useEffect(() => {
+
+    fetch('https://quote.cs260.click')
+      .then((response) => response.json())
+      .then((data) => {
+        setQuote(data.quote);
+        setQuoteAuthor(data.author);
+      })
+      .catch();
+  }, []);
+
   return (
     <main style={mainStyle}>
       <p>
@@ -22,6 +36,10 @@ export function About() {
       <p>
         BowlerBlitz is currently under development. The creator, Carley, expresses gratitude for all the help she gets from class while creating this application.
       </p>
+      <div className='quote-box bg-light text-dark'>
+          <p className='quote'>{quote}</p>
+          <p className='author'>{quoteAuthor}</p>
+        </div>
     </main>
   );
 }

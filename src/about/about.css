@@ -4,6 +4,27 @@ body {
     min-width: 375px;
   }
   
+  .quote-box {
+    margin-top: 1em;
+    padding: 0.5em;
+    border-radius: 5px;
+  }
+  
+  .quote {
+    font-style: italic;
+    color: rgb(144, 61, 61);
+  }
+  
+  .author {
+    font-weight: bold;
+    text-align: right;
+    color: rgb(144, 61, 61);
+  }
+  
+  .author::before {
+    content: " - ";
+  }
+
   header {
     flex: 0 80px;
     background-color: rgb(144, 61, 61);

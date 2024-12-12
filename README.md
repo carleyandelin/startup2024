@@ -58,6 +58,6 @@ For this part I used JavaScript and React so that the application completely wor
 - [x] **Bundled and transpiled** - done!
 - [x] **Routing** - All paths are working (finally! Except the ranking on the leaderboard page, which I'm going to change soon)
 
-## simon-login
+## Login Deliverable
 
 This deliverable demonstrates authenticating users and storing credentials and authentication tokens in MongoDB.

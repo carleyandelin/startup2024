@@ -132,7 +132,7 @@
 #### Assuming the following Node.js WebSocket code in the back end, and the following front end WebSocket code, what will the front end log to the console?
 - The front end will likely log any messages sent from the back end after the WebSocket connection is established.
 #### What is the WebSocket protocol intended to provide?
-- A full-duplex communication channel over a single, long-lived TCP connection.
+- Communication and/or notifications from user and server.
 #### What do the following acronyms stand for?
 - JSX: JavaScript XML
 - JS: JavaScript

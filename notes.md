@@ -107,4 +107,62 @@
 - 80: HTTP
 - 22: SSH
 
+# Final Notes
 
+#### What is the default port for HTTP/HTTPS/SSH?
+- HTTP: 80
+- HTTPS: 443
+- SSH: 22
+#### What does an HTTP status code in the range of 300/400/500 indicate?
+- 300s: Redirection (e.g., 301 for permanent redirection).
+- 400s: Client errors (e.g., 404 for "Not Found").
+- 500s: Server errors (e.g., 500 for "Internal Server Error").
+#### What does the HTTP header content-type allow you to do?
+- It specifies the media type of the resource, allowing the client and server to understand how to process the data (e.g., application/json or text/html).
+#### What does a “Secure cookie”/”Http-only cookie”/”Same-site cookie” do?
+- Secure cookie: Sent only over HTTPS.
+- Http-only cookie: Not accessible via JavaScript, enhancing security.
+- Same-site cookie: Limits cookie sharing across different sites, preventing CSRF attacks.
+#### Assuming the following Express middleware, what would be the console.log output for an HTTP GET request with a URL path of /api/document?
+- Without specific code, the middleware will likely log something like the request method (GET), the path (/api/document), or headers.
+#### Given the following MongoDB query, select all of the matching documents {name: "Mark"}
+- Retrieves all documents in the collection where the name field equals "Mark".
+#### How should user passwords be stored?
+- Passwords should be stored as hashed and salted values using secure algorithms like bcrypt or Argon2.
+#### Assuming the following Node.js WebSocket code in the back end, and the following front end WebSocket code, what will the front end log to the console?
+- The front end will likely log any messages sent from the back end after the WebSocket connection is established.
+#### What is the WebSocket protocol intended to provide?
+- A full-duplex communication channel over a single, long-lived TCP connection.
+#### What do the following acronyms stand for?
+- JSX: JavaScript XML
+- JS: JavaScript
+- AWS: Amazon Web Services
+- NPM: Node Package Manager
+- NVM: Node Version Manager
+#### Assuming an HTML document with a body element, what text content will the following React component generate?
+- React components render their output based on JSX, props, and state; specifics depend on the component code.
+#### Given a set of React components that include each other, what will be generated?
+- A virtual DOM tree representing the nested structure of the components.
+#### What does a React component with React.useState do?
+- It manages state in a functional component, allowing dynamic updates to the component.
+#### What are React Hooks used for?
+- Hooks enable functional components to use state, lifecycle methods, and other React features.
+#### What does the State Hook/Context Hook/Ref Hook/Effect Hook/Performance Hook do?
+- State Hook: Manages state in functional components.
+- Context Hook: Accesses global data without prop drilling.
+- Ref Hook: Accesses or manipulates DOM elements.
+- Effect Hook: Runs side effects like data fetching or subscriptions.
+- Performance Hook: Optimizes rendering and performance.
+- Given React Router code, select statements that are true.
+- The correct statements depend on the provided code but typically involve route matching or component rendering logic.
+#### What does the package.json file do?
+- Defines the metadata, dependencies, and scripts for a Node.js project.
+#### What does the fetch function do?
+- Fetches resources from the network, returning a promise that resolves to a Response object.
+#### What does Node.js do?
+- Provides a runtime environment for executing JavaScript on the server side.
+#### What does pm2 do?
+- A process manager for Node.js applications, supporting load balancing, monitoring, and restarts.
+- The pm2 command line does the following:It allows you to s start, stop, restart, monitor, and manage multiple applications efficiently.
+#### What does Vite do?
+- A modern build tool for fast development and optimized production builds of JavaScript and web projects.
